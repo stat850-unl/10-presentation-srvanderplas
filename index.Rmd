@@ -1,13 +1,12 @@
 ---
 title: "About Me"
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F)
 ```
-
-This is a github document. Here are the files I've created:
+Here are the files I've created:
 
 - [A beamer presentation using an Rnw file and `knitr`](beamer/index.pdf)
 
