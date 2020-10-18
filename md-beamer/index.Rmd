@@ -54,3 +54,6 @@ tibble(x = seq(0, 2*pi, pi/24),
 ## CV
 
 My CV can be found [here](https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf)
+
+
+The CV I created for this assignment is [here](https://github.com/stat850-unl/10-presentation-srvanderplas/raw/master/CV/index.pdf)

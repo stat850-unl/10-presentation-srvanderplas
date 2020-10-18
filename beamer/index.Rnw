@@ -75,10 +75,12 @@ tibble(x = seq(0, 2*pi, pi/24),
 \end{frame}
 
 \begin{frame}{CV Link}
-My CV can be found here: \\
-\url{https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf}
-
-Or, you can use \href{https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf}{this link}.
+\begin{itemize}
+\item My CV can be found here: \\
+{\small\url{https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf}}
+\bigskip
+\item The CV I created for this assignment is \href{https://github.com/stat850-unl/10-presentation-srvanderplas/raw/master/CV/index.pdf}{here}.
+\end{itemize}
 \end{frame}
 
 \end{document}
