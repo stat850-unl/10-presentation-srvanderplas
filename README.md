@@ -23,4 +23,15 @@ You can customize your CV as you like -- it's a good idea to keep your CV up to 
 
 Use GitHub pages to host your CV and slide decks, following the gifs in the textbook. Create an Rmarkdown document in this repository (call it index.Rmd) with links to both of your slide decks and your CV (note: you will need to use the username.github.io links for this to work correctly). 
 
+Some things to keep in mind:
+
+- You don't need to commit every file latex/markdown generates: only commit the essentials: 
+    - source document, 
+    - any file dependencies (like pictures or data), and 
+    - the final result (if you are planning to make the final result available online). 
+    
+- XeLaTeX allows you to use different fonts, but may cause compilation errors if you use e.g. beamer templates not designed to be compiled with XeLaTeX. You can change which engine is used by going to Project Options in RStudio.
+
+- When you ask for help, remember to make your question as reproducible as possible!
+
 Upload the link to the compiled index.html file to Canvas to complete this assignment.
