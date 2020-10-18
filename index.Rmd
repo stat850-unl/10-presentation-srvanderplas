@@ -16,4 +16,6 @@ Here are the files I've created:
 
 - [A slidy presentation using a md file](slidy/index.html)
 
+- [A xaringan presentation using a md file](xaringan/index.html)
+
 - [A CV using a template from Overleaf that I heavily modified](CV/index.pdf)
