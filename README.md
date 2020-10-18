@@ -21,6 +21,8 @@ These slide decks should have at most 5 slides (title, introduction, animal pict
 Use one of the CV packages mentioned in the textbook (or another LaTeX or markdown CV package that you want to try) to create a basic CV. I will not be grading the CV on how much content there is, so don't worry if you don't have publications, etc. You can add a fake publication if you want, just put the title as XXX sample XXX or something. 
 You can customize your CV as you like -- it's a good idea to keep your CV up to date, so take the time to do that now if you want.
 
+Another good source for CV templates is [Overleaf](https://www.overleaf.com/latex/templates/tagged/cv)
+
 ### Part 3
 
 Use GitHub pages to host your CV and slide decks, following the gifs in the textbook. Create an Rmarkdown document in this repository (call it index.Rmd) with links to both of your slide decks and your CV (note: you will need to use the username.github.io links for this to work correctly). 
