@@ -1,0 +1,45 @@
+---
+title: "IOSlides: Hi, My name is Susan"
+author: "Susan Vanderplas"
+date: "10/18/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = F, warning = F)
+```
+
+## Introduction
+
+- Birthday: August 21
+- I grew up in Houston, TX (for the most part)
+- I got my undergrad degree in psychology and applied mathematical sciences
+- I started my PhD in Bioinformatics before deciding that I hate plants (mostly, pollen) and don't want to help them achieve any sort of reproductive success
+
+## Favorite Animal = Anything adorable and fuzzy
+
+<video width="240px" height = "320px" controls>
+<source src="../md-beamer/figure/otterlyAdorable.mp4" type="video/mp4"/>
+</video>
+
+## Favorite Plot
+
+Ok, this isn't my favorite plot, but it is at least one that is fun and easy to generate...
+
+```{r}
+library(tidyverse)
+tibble(x = seq(0, 2*pi, pi/24),
+       y = sin(x),
+       ymin = y - .25,
+       ymax = y + .25) %>%
+  ggplot(aes(x = x, xend = x, y = ymin, yend = ymax)) + geom_segment() +
+  coord_fixed()
+
+```
+
+## CV
+
+My CV can be found [here](https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf)
+
+
+The CV I created for this assignment is [here](https://github.com/stat850-unl/10-presentation-srvanderplas/raw/master/CV/index.pdf)
