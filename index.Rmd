@@ -14,4 +14,6 @@ Here are the files I've created:
 
 - [An ioslides presentation using a md file](ioslides/index.html)
 
+- [A slidy presentation using a md file](slidy/index.html)
+
 - [A CV using a template from Overleaf that I heavily modified](CV/index.pdf)
