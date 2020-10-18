@@ -12,6 +12,8 @@ In your slides, I'd like you to introduce yourself, provide some basic biographi
 2. Your favorite plot (can be one you've already generated in this class), which should be generated as part of your document (you can't just include the picture). 
 3. A link to your CV, which you will create in the next part.
 
+You should not show any code, automatically generated error messages, etc. in your generated files - you should only show the end product.
+
 These slide decks should have at most 5 slides (title, introduction, animal picture, plot, and CV link), so hopefully they won't take too  much time. The goal of the assignment is that you will be familiar with the advantages and disadvantages of each slide ecosystem.
 
 ### Part 2
