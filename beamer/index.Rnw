@@ -1,0 +1,84 @@
+\documentclass[10pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\ifx\hypersetup\undefined
+  \AtBeginDocument{%
+    \hypersetup{unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false}
+  }
+\else
+  \hypersetup{unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false}
+\fi
+\usepackage{breakurl}
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % this default might be overridden by plain title style
+ \newcommand\makebeamertitle{\frame{\maketitle}}%
+ % (ERT) argument for the TOC
+ \AtBeginDocument{%
+   \let\origtableofcontents=\tableofcontents
+   \def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+   \def\gobbletableofcontents#1{\origtableofcontents}
+ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usetheme{Boadilla}
+\usecolortheme{beaver}
+
+\makeatother
+
+\begin{document}
+<<setup, include=FALSE>>=
+library(knitr)
+opts_chunk$set(fig.path='figure/beamer-',fig.align='center',fig.show='hold',size='footnotesize', echo = F)
+@
+
+\title[Introduction]{Hi, My name is Susan}
+
+\author{Susan Vanderplas}
+\makebeamertitle
+\begin{frame}{Introduction}
+
+\begin{itemize}
+\item Birthday: August 21
+\item I grew up in Houston, TX (for the most part)
+\item I graduated with a PhD in Statistics from Iowa State, but started grad school in Bioinformatics (before deciding I didn't want to help plants make me sick)
+\end{itemize}
+\end{frame}
+
+\section{Other Information}
+\begin{frame}[fragile]{Favorite Animal}
+
+I love basically any puppies.
+
+<<fig.width = 8, fig.height = 6, out.width = ".6\\textwidth">>=
+knitr::include_graphics("figure/chocolate_lab_cute_puppies.jpg")
+@
+
+\end{frame}
+
+\begin{frame}[fragile]{Favorite Plot}
+Ok, this isn't my favorite plot, but it is at least one that is fun and easy to generate...
+<<boring-plots,fig.width=6,fig.height=4,out.width='\\linewidth', message = F, warning = F>>=
+library(tidyverse)
+tibble(x = seq(0, 2*pi, pi/24),
+       y = sin(x),
+       ymin = y - .25,
+       ymax = y + .25) %>%
+  ggplot(aes(x = x, xend = x, y = ymin, yend = ymax)) + geom_segment() +
+  coord_fixed()
+@
+\end{frame}
+
+\begin{frame}{CV Link}
+My CV can be found here: \\
+\url{https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf}
+
+Or, you can use \href{https://github.com/srvanderplas/CV/raw/master/SusanVanderplas-CV.pdf}{this link}.
+\end{frame}
+
+\end{document}
