@@ -1,0 +1,37 @@
+%!TEX root = index.tex
+
+%%Command used in order to make each entry cleaner
+\newcommand{\Paper}[4]{
+\textbf{\textcolor{materialPurple}{\large #1}} & {\normalsize  #2. \emph{#3}}\\
+& {\normalsize \textcolor{textLightGray}{#4}}\vspace{5pt}\\
+}
+\newcommand{\Presentation}[3]{
+\textbf{\textcolor{materialPurpleDark}{\large #1}} &
+{\normalsize  #2.} %title
+\\&{\normalsize \textcolor{textLightGray}{#3}} \vspace{5pt}\\% Conference
+}
+
+\heading{materialPurple}{Recent Publications}
+
+\begin{tabularx}{.95\textwidth}{l X}
+\Paper{2020}{Vanderplas, Roettger, Cook, Hofmann}{Statistical Significance Calculations for Scenarios in Visual Inference}{Stat}
+\Paper{2020}{Vanderplas, Carriquiry, Hofmann, Hamby, Tai}{An introduction to firearms examination for researchers in statistics.}{Handbook of Forensic Statistics}
+\Paper{2020}{Vanderplas, Nally, Klep, Cadevall, Hofmann}{Comparison of three
+similarity scores for bullet LEA matching}{Forensic Science International}
+\Paper{2020}{Vanderplas, Cook, Hofmann}{Testing Statistical Charts: What Makes a Good Graph?}{Annual Review of Statistics and Its Application}
+\Paper{2019}{Rutter, Vanderplas, Cook, Graham}{\texttt{ggenealogy}: An R Package for Visualizing Genealogical Data}{Journal of Statistical Software}
+\Paper{2019}{Vanderplas, Goluch, Hofmann}{Framed! Reproducing and Revisiting 150 year old charts}{Journal of Computational and Graphical Statistics}
+\Paper{2019}{Sievert, Vanderplas, Cai, Ferris, Khan, Hocking}{Extending \texttt{ggplot} for linked and animated web graphics}{Journal of Computational and Graphical Statistics}
+\end{tabularx}
+
+\vfill
+
+\heading{materialPurpleDark}{Recent Presentations}
+
+\begin{tabularx}{.95\textwidth}{l X}
+\Presentation{2020}{Do You See What I See? Leveraging Human Perception in Computer Vision Tasks}{Joint Statistical Meetings {\small (Session Cancelled)}}
+\Presentation{2020}{Perception and Visual Communication in a Global Pandemic}{Data Science, Statistics, and Visualization}
+\Presentation{2020}{One of these things is not like the others: Visual Statistics and Testing in Statistical Graphics}{Data Science Symposium, South Dakota State University}
+\Presentation{2020}{Big Data, Big Experiments, and Big Problems}{Plant and Animal Genome}
+\end{tabularx}
+\vfill
